@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Evidencias - Finanzas Corporativas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect x='15' y='45' width='15' height='45' rx='3' fill='%233b82f6'/><rect x='42' y='25' width='15' height='65' rx='3' fill='%231e3a8a'/><rect x='70' y='10' width='15' height='80' rx='3' fill='%232563eb'/></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <span class="logo-icon">📊</span>
+                <span class="logo-text">MOOC<span>Finanzas</span></span>
+            </div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#introduccion">Inducción</a>
+                <a href="#modulos">Módulos</a>
+                <a href="#resumen">Resumen</a>
+                <a href="#certificado">Certificación</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <span class="hero-badge">Repositorio Académico Oficial</span>
+            <h2>Portafolio Digital de Evidencias</h2>
+            <p>Soporte metodológico y documental que registra el progreso, análisis analíticos, evaluaciones y el material de estudio cubierto a lo largo del proceso de formación en finanzas.</p>
+            <div class="hero-actions">
+                <a href="#modulos" class="btn-primary">Ver Módulos de Aprendizaje</a>
+                <a href="#certificado" class="btn-outline-white">Ver Certificado</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="introduccion" class="intro-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Fase Inicial</span>
+                <h3 class="section-title">Apertura e Inducción</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="intro-card">
+                <div class="intro-info">
+                    <h4>Contextualización del Programa</h4>
+                    <p>Fase inicial enfocada en el planteamiento de los objetivos clave del curso, la metodología de evaluación adaptativa y el entendimiento general del entorno de aprendizaje virtual.</p>
+                </div>
+                <div class="intro-action">
+                    <button class="btn-dark" onclick="openIntroModal()">
+                        <span class="btn-icon">👁️</span> Ver Contenido de Inducción
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modulos" class="modules-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Unidades Temáticas</span>
+                <h3 class="section-title">Estructura del Curso</h3>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="grid-modules">
+                
+                <div class="card" data-module="1">
+                    <div class="card-header">
+                        <span class="card-badge">Módulo 01</span>
+                        <span class="card-icon">📈</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Fundamentos Contables</h4>
+                        <p>Comprensión profunda de la ecuación contable, balance general, estado de resultados y la lógica estructural de los reportes financieros corporativos.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary" onclick="openModuleModal(event)">Explorar Evidencias</button>
+                    </div>
+                </div>
+
+                <div class="card" data-module="2">
+                    <div class="card-header">
+                        <span class="card-badge">Módulo 02</span>
+                        <span class="card-icon">📉</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Gestión y Costeo</h4>
+                        <p>Clasificación de costos fijos y variables, análisis marginal y la determinación exacta del Punto de Equilibrio de una organización.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary" onclick="openModuleModal(event)">Explorar Evidencias</button>
+                    </div>
+                </div>
+
+                <div class="card" data-module="3">
+                    <div class="card-header">
+                        <span class="card-badge">Módulo 03</span>
+                        <span class="card-icon">📋</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Indicadores y DuPont</h4>
+                        <p>Medición estratégica mediante ratios de liquidez, solvencia y rentabilidad. Desglose operativo a través del sistema de análisis DuPont.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary" onclick="openModuleModal(event)">Explorar Evidencias</button>
+                    </div>
+                </div>
+
+                <div class="card" data-module="4">
+                    <div class="card-header">
+                        <span class="card-badge">Módulo 04</span>
+                        <span class="card-icon">💎</span>
+                    </div>
+                    <div class="card-body">
+                        <h4>Evaluación de Proyectos</h4>
+                        <p>Modelado e interpretación de flujos de fondos descontados, cálculo del Valor Presente Neto (VPN) y la Tasa Interna de Retorno (TIR).</p>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn-secondary" onclick="openModuleModal(event)">Explorar Evidencias</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="resumen" class="summary-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Rendimiento Académico</span>
+                <h3 class="section-title">Logros y Cierre General</h3>
+                <div class="divider"></div>
+            </div>
+            <div class="summary-box">
+                <div class="summary-text">
+                    <h4>Estado de Finalización del Programa</h4>
+                    <p>Consolidado general que valida la aprobación total de las evaluaciones obligatorias del curso, revisión de retroalimentaciones y el cumplimiento del estándar académico.</p>
+                </div>
+                <div class="summary-action">
+                    <button class="btn-dark" onclick="openSummaryModal()">
+                        <span class="btn-icon">🏆</span> Ver Resumen de Cierre
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificado" class="certificate-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Culminación</span>
+                <h3 class="section-title">Certificación Oficial</h3>
+                <div class="divider"></div>
+            </div>
+            <p class="certificate-desc">Documento académico emitido tras completar satisfactoriamente las horas lectivas y superar los criterios de evaluación establecidos.</p>
+            <div class="certificate-wrapper">
+                <div class="certificate-frame">
+                    <img src="/mi-portafolio-finanzas/assets/certificado-coursera.png" alt="Certificado de Finalización Oficial" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Portafolio de Evidencias Financieras. Desarrollado bajo estándares académicos corporativos.</p>
+        </div>
+    </footer>
+
+    <div id="evidence-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h4 id="modal-title">Título del Bloque</h4>
+                    <p id="modal-description">Descripción técnica de los soportes cargados.</p>
+                </div>
+                <span class="close-modal" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body-gallery">
+                </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
