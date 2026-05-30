@@ -618,7 +618,6 @@ footer {
     flex-shrink: 0;
 }
 
-/* Responsivo para pantallas pequeñas */
 @media (max-width: 768px) {
     .course-grid {
         grid-template-columns: 1fr;
@@ -642,7 +641,7 @@ footer {
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Reset y Estilos Base */
+
 * {
     margin: 0;
     padding: 0;
